@@ -1,4 +1,4 @@
-#include <iostream>
+#pragma once
 
 template <class T> class Value{
     struct Node {
