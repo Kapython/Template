@@ -7,12 +7,12 @@ template <class T> class Value{
         Node *next;
     };
 public:
-    int length;
     Value();
     Value(T element);
-    ~value();
-    void initial();
-    void push(T data);
+    ~Value();
+    void setBeginning();
+    void addToHead(T data);
+    void addToTail(T data);
     T pop(); //Получить элемент и удалить его из списка
     T get(); //Получить элемент неудаляя его
     void delData(T data);
@@ -23,6 +23,6 @@ public:
     void goPrew();
 
 private:
-    Node *head;
-    Node *curr;
+    Node *pHead;
+    Node *pCurr;
 };
